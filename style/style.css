@@ -1,0 +1,217 @@
+.containerA{
+   display: grid;
+   width: 100%;
+   height: 1000px;
+   grid-template-columns:1fr 1fr 1fr 1fr;
+   grid-template-rows:1fr 1fr 1fr 1fr;
+   grid-template-areas: 
+    "header header header header"
+    "content-0 content-1 content-1 content-4"
+    "content-0 content-2 content-3 content-4"
+    "footer footer footer footer";
+   
+  }
+    .containerB{
+   display: grid;
+   width: 100%;
+   height: 1000px;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-areas: 
+    "header header header header"
+    "content-0 content-1 content-1 content-1"
+    "content-0 content-2 content-2 content-2"
+    "footer footer footer footer";
+   
+    }
+   
+    .containerA> *{
+      border: 0px solid black;
+      }
+      
+      .containerC> *{
+          border: 0px solid black;
+      }
+      
+    .header{
+       grid-area: header;
+      }
+      
+    .content-0{
+       grid-area: content-0;
+       background: url("../images/Background5.png");
+       background-size: cover;
+       margin: 1em;
+       border-radius: 12px;
+       position:relative;
+      }
+      
+    .content-1{
+       grid-area: content-1;
+      }
+      
+    .content-2{
+       grid-area: content-2;
+      }
+      
+    .content-3{
+       grid-area: content-3;
+      }
+      
+      .content-4{
+       grid-area: content-4;
+       background: url("../images/Background5.png");
+       background-size: cover;
+       margin: 1em;
+       border-radius: 12px;
+       position:relative;
+      }
+      
+    .footer{
+       grid-area: footer;
+       background: url("../images/background4.png");
+       background-size: cover;
+       background-color: rgba(10,10,20,0.2);
+       margin: 1em;
+       border-radius: 12px;
+       position:relative;
+      }
+    .Title{
+         text-align: center;
+         font-size: 75px;
+         padding-bottom: 60px;
+         font-family: londrina solid, sans-serif;
+         color: #cccccc;
+         background-color: rgba (10,10,20,0.2);
+    }
+    .secondTitle{
+     text-align: center;
+     font-size: 45px; 
+     margin: 0px 0 20px 0;
+     background-color: rgba (10,10,20,0.2);
+     font-family: londrina solid, sans-serif;
+     color: #f3f3f3;
+}  
+header{
+    background: url("../images/Background4.png");
+    background-size: cover;
+    background-color: rgba (10,10,20,0.2);
+    margin: 1em;
+    border-radius: 12px;
+    position: relative;
+}
+ul{
+    padding:10px 0px 0px;
+    background: rgba (0,0,0,0.5);
+    }
+li{
+     display: inline; 
+    }
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "lato", sans-serif;
+    }
+    h1{
+        text-align: center;
+        font-family: "londrina shadow", cursive;
+    }
+    h2{
+        text-align: center;
+        font-family: "londrina shadow", cursive;
+    }
+    h3{
+        text-align: center;
+        font-family: "londrina shadow", cursive;
+    }
+    .author{
+        text-align: left;
+        font-family: "londrina shadow", cursive;
+        color: whitesmoke;
+        padding: 1px 20px 1px 200px;
+    }
+    .email{
+        text-align: right;
+        font-family: "londrina shadow", cursive;
+        color: blue;
+        padding: 1px 20px 1px 200px;   
+    }
+    .college{
+       text-align: right;
+        font-family: "londrina shadow", cursive;
+        color: blue;
+        padding: 1px 20px 1px 200px;  
+    }
+    p{
+        padding: 10px;
+        text-align: justify;
+        line-height: 20px;
+        position: relative;
+    }
+    .fa{
+      padding: 15px;
+      width: 1px;
+      text-align: center;
+      text-decoration: none;
+      margin: -15px 2px;
+      border-radius: 90%;
+      position:relative;
+      left:20px;
+      top:-20px;
+    }
+    .fa-facebook{
+        background:#385998;
+        color:white;
+    }
+    .fa-twitter{
+        background:#55ACEE;
+    }
+    .fa-linkedin{
+        background:#007bb5;
+        color: white;
+    }
+    .fa-youtube{
+        background:#bb0000;
+         color:white;  
+    }
+    .fa-instagram{
+        background:#125688;
+        color: white;
+    }
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 8%;
+            
+    }
+    .center2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 2px;
+    }
+    form{
+        border-radius: 5px;
+        background-color: activecaption;
+        padding: 20px;
+    }
+    input[type=text], select, textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        box-sizing: border-box;   
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[submit]{
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
